@@ -12,14 +12,13 @@ export default function Nav(){
     
     return (
         <nav>
-            <button onClick={toggleColorMode}>
-                <img
-                    className="mode-toggle"
-                    src={colorMode === 'light' ? sun : moon}
-                    alt={colorMode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
-                    mr={2}
-                />
-            </button>
+            <img
+                className="mode-toggle"
+                src={colorMode === 'light' ? sun : moon}
+                alt={colorMode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+                mr={2}
+                onClick={toggleColorMode}
+            />
         </nav>
     );
 }

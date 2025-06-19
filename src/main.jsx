@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { ChakraProvider } from '@chakra-ui/react'
+import "./fonts/Dixon-rvGy8.ttf"
 
 createRoot(document.getElementById('root')).render(
   <ChakraProvider>
