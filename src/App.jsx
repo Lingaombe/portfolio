@@ -1,24 +1,17 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Box, useColorModeValue } from "@chakra-ui/react";
+import "./App.css"
 
-import Home from './pages/Home';
-import Footer from './components/footer';
 import Nav from './components/Nav';
+import Footer from "./components/footer";
+import SparkleCursor from "./utils/cursor-tracking";
 
 export default function App() {
-  return (
-    <>
+  return(
+    <Box minH={"100vh"} bg={useColorModeValue("blue.100", "blue.920")}	>
       <Nav />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
-        </Routes>
-      </Router>
+      <SparkleCursor/>
       <Footer />
-    </>
+    </Box>
   )
 }
-
-

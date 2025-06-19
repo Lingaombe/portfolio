@@ -1,20 +1,25 @@
-import { useColorMode } from "@chakra-ui/react"
+import { useColorMode} from "@chakra-ui/react"
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import sun from "../assets/sun2.png";
+import moon from "../assets/moon.png";
+import sound from "../assets/mood-toggle.mp3";
+import "./comps.css"
 
-import { Link } from 'react-router-dom';
+
 export default function Nav(){
 
     const { colorMode, toggleColorMode } = useColorMode();
-
+    
     return (
         <nav>
-            <ul>
-                <Link to={"www.google.com"}><li><i class="bi bi-cloud-lightning"></i></li></Link>
-            </ul>
             <button onClick={toggleColorMode}>
-                {colorMode === 'light' ? <i class="bi bi-lightbulb-off"></i> : <i class="bi bi-lightbulb-fill"></i>}
+                <img
+                    className="mode-toggle"
+                    src={colorMode === 'light' ? sun : moon}
+                    alt={colorMode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+                    mr={2}
+                />
             </button>
-
         </nav>
     );
 }
