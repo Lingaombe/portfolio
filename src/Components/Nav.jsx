@@ -1,6 +1,6 @@
 import { useColorMode} from "@chakra-ui/react"
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import sun from "../assets/sun2.png";
+import sun from "../assets/sun.png";
 import moon from "../assets/moon.png";
 import sound from "../assets/mood-toggle.mp3";
 import "./comps.css"
