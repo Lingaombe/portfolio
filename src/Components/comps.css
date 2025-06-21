@@ -17,3 +17,40 @@ footer{
     left: 0;
     padding: 10px;
 }
+.cloud{
+    width: 200px;
+    height: 60px;
+    position: fixed;
+    animation: float 5s ease-in-out infinite;
+}
+.cloud1{
+    top: 2vh;
+    left: 5vw;
+}
+.cloud2{
+    top: 8vh;
+    left: 20vw;
+}
+.cloud3{
+    top: 2vh;
+    left: 40vw;
+}
+.cloud4{
+    top: 8vh;
+    left: 60vw;
+}
+.cloud5{
+    top: 2vh;
+    left: 80vw;
+}
+@keyframes float {
+    0% { transform: translatex(0); }
+    50% { transform: translatex(-10px); }
+    100% { transform: translatex(0); }
+}
+@media (max-width: 450px){
+    .cloud{
+        width: 120px;
+        height: 60px;
+    }
+}

@@ -3,7 +3,26 @@ body{
   cursor: url("./assets/cursor.png"), pointer;	
 }
 @font-face {
-    font-family: "Dixon-rvGy8";
-    src: local("Dixon-rvGy8"),
-    url("./fonts/Dixon-rvGy8.ttf") format("truetype");
+  font-family: "Daydream";
+  src: local("Daydream"),
+  url("./fonts/Daydream.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Renovation";
+  src: local("Renovation"),
+  url("./fonts/Renovation.otf") format("truetype");
+}
+.font{
+  font-family: "Daydream", sans-serif;
+}
+.font1{
+  font-family: "Renovation", sans-serif;
+  font-size: 1.2rem;
+}
+h1{
+  font-size: 4vw;
+}
+h2{
+  font-size: 4vw;
+  font-style: italic;
 }

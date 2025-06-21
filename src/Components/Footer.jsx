@@ -3,7 +3,13 @@ export default function Footer(){
     return(
         <footer>
             <p>
-                I can do all things through Christ who strengthens me. Phillipians 4:13
+                "Sirs, what must I do to be saved?"
+            </p>
+            <p>
+                "Believe in the Lord Jesus, and you will be saved, you and your household."
+            </p>
+            <p>
+                 Acts 16:30-31
             </p>
         </footer>
     )
