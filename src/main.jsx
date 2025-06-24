@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { ChakraProvider } from '@chakra-ui/react'
 import "./fonts/Renovation.otf"
 import "./fonts/Daydream.ttf"
+import "./fonts/MondayFeelings.ttf"
 
 createRoot(document.getElementById('root')).render(
   <ChakraProvider>

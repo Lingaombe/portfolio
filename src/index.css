@@ -7,18 +7,27 @@ body{
   src: local("Daydream"),
   url("./fonts/Daydream.ttf") format("truetype");
 }
+.font{
+  font-family: "Daydream", sans-serif;
+}
 @font-face {
   font-family: "Renovation";
   src: local("Renovation"),
   url("./fonts/Renovation.otf") format("truetype");
 }
-.font{
-  font-family: "Daydream", sans-serif;
-}
 .font1{
   font-family: "Renovation", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
+@font-face {
+  font-family: "MondayFeelings";
+  src: local("MondayFeelings"),
+  url("./fonts/MondayFeelings.ttf") format("truetype");
+}
+.font2{
+  font-family: "MondayFeelings", sans-serif;
+}
+
 h1{
   font-size: 4vw;
 }
