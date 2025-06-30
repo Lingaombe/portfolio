@@ -1,0 +1,78 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #c8eca438;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #d0ffa1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: black;
+  font-size: 15px;
+}
+.popup-content h2{
+    font-size: 40px;
+}
+.popup-content h3{
+  font-size: 25px;
+}
+#close{
+    width: fit-content;
+    box-shadow: 0 0 0 0;
+    color: black;
+    border: transparent
+}
+.contact_me{
+    display: flex;
+    place-content: center;
+    gap: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: auto;
+}
+.project{
+    box-shadow: 0 4px 6px #ADD294;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: ease-out 0.5s;
+}
+.tech{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+.tech li{
+    box-shadow: 2px 2px 5px #ADD294;
+    border-radius: 10px;
+    padding: 0 5px;
+    margin: 5px;
+}
+
+@media (orientation: portrait){
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .project{
+        height: fit-content;
+    }
+}

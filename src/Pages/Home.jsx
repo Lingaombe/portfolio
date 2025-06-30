@@ -1,14 +1,20 @@
 import dna from '../assets/dna.gif';
 import { useState } from "react";
 import Popup from './aboutMe';
+import Popup1 from './myWork';
+import "./popup.css";
 
 
 export default function Home() {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isopen, setisopen] = useState(false);
 
     function aboutMe() {
         setIsOpen(!isOpen);
+    };
+    function myWork(){
+        setisopen(!isopen);
     };
 
     return (
@@ -26,14 +32,24 @@ export default function Home() {
                     ></img>
                     {isOpen && <Popup onClose={aboutMe} />}
                 </div>
-                <div className="work">
-                    <h2>
-                        Frontend Developer
-                    </h2>
-                    <button className="btn-shine" onClick={myWork}
-                    ><span>my work</span></button>                   
-                </div>
+                <h2>
+                    Software Developer
+                </h2>
                 <p><i class="bi bi-geo-alt-fill"></i>Kolhapur, India</p>
+                <div className="tech">
+                    <button className="btn-shine" onClick={myWork}>
+                        Websites
+                    </button>
+                    {isopen && <Popup1 onClose={myWork} />}
+                    <button className="btn-shine" onClick={myWork}>
+                        Apps
+                    </button>
+                    {isopen && <Popup1 onClose={myWork} />}    
+                    <button className="btn-shine" onClick={myWork}>
+                        IoT
+                    </button>
+                    {isopen && <Popup1 onClose={myWork} />}   
+                </div>                         
             </div>
         </div>
     );

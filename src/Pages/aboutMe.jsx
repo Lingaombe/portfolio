@@ -6,7 +6,7 @@ export default function Popup({ onClose }){
         <button onClick={onClose} id="close"><i class="bi bi-escape"></i></button>
         <h2>Meet the Dev</h2>
         <p>Developing software is my ikigai.</p>
-        <p>The intersection of what I love, what i'm good at, what the world needs and what I can be paid for.</p>
+        <p>The intersection of what I love, what Im good at, what the world needs and what I can be paid for.</p>
         <p>If you have an awesome app idea let me know and we can turn it into reality together</p>
         <div className="contact_me">
             <a href="https://github.com/Lingaombe" target="_blank"><i className="bi-github"></i></a>
