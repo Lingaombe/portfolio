@@ -22,30 +22,35 @@ export default function Home() {
             <div className="inner_page">
                 <div className="my_name font">
                     <h1>
-                        Hannah Mngoli
+                        HANNAH MNGOLI
                     </h1>
-                    <img className="dna"
-                        src={dna}
-                        alt="About me"
-                        title="About me"
-                        onClick={aboutMe}
-                    ></img>
+                    <div className="title_disp font1" data-title="About Me">
+                        <img className="dna"
+                            src={dna}
+                            alt="About me"
+                            onClick={aboutMe}
+                        ></img>
+                    </div>
                     {isOpen && <Popup onClose={aboutMe} />}
                 </div>
                 <h2>
                     Software Developer
                 </h2>
                 <p><i class="bi bi-geo-alt-fill"></i>Kolhapur, India</p>
-                <div className="tech">
-                    <button className="btn-shine" onClick={myWork}>
-                        Websites
+                <div className="tech" style={{justifyContent:"flex-start"}} >
+                    <button className="btn-shine" onClick={myWork} style={{border:"outset"}}>
+                        Frontend
                     </button>
                     {isopen && <Popup1 onClose={myWork} />}
-                    <button className="btn-shine" onClick={myWork}>
+                    <button className="btn-shine" onClick={myWork} style={{border:"outset"}}>
+                        Fullstack
+                    </button>
+                    {isopen && <Popup1 onClose={myWork} />}                    
+                    <button className="btn-shine" onClick={myWork} style={{border:"outset", width: "70px"}}>
                         Apps
                     </button>
                     {isopen && <Popup1 onClose={myWork} />}    
-                    <button className="btn-shine" onClick={myWork}>
+                    <button className="btn-shine" onClick={myWork} style={{border:"outset", width: "70px"}}>
                         IoT
                     </button>
                     {isopen && <Popup1 onClose={myWork} />}   

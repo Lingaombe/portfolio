@@ -2,7 +2,7 @@
 export default function Footer(){
     return(
         <footer>
-            <div className="verse">
+            <div className="verse font1">
                 <p>
                     "Sirs, what must I do to be saved?"
                 </p>

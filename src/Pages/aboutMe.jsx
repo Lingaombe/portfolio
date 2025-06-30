@@ -11,9 +11,9 @@ export default function Popup({ onClose }){
         <div className="contact_me">
             <a href="https://github.com/Lingaombe" target="_blank"><i className="bi-github"></i></a>
             <i className="bi-envelope-plus-fill" onClick={() => window.location = 'mailto:hmngoli@outlook.com'}></i>
-            <a href="https://github.com/Lingaombe" target="_blank"><i className="bi-linkedin"></i></a>
-            <a href="https://github.com/Lingaombe" target="_blank"><i className="bi-instagram"></i></a>
-            <a href="https://github.com/Lingaombe" target="_blank"><i className="bi-file-earmark-person-fill" title="my resume"></i></a>
+            <a href="https://www.linkedin.com/in/hannah-mngoli-357793231" target="_blank"><i className="bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/hanmngoli" target="_blank"><i className="bi-instagram"></i></a>
+            <a href="https://www.canva.com/design/DAGePrCqA2U/CHmosaNkSKupcYgOEM6c6A/edit?utm_content=DAGePrCqA2U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><i className="bi-file-earmark-person-fill" title="my resume"></i></a>
         </div>
       </div>
     </div>

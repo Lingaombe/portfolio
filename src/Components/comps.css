@@ -5,11 +5,12 @@
     z-index: 1000;
     height: 100px;
     width: 100px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.9s ease-in-out;
     transform: rotate(0deg);
+    cursor: pointer;
 }
 .mode-toggle:active{
-    transform: rotate(360deg);
+    transform: rotate(720deg);
 }
 footer{
     position: fixed;
@@ -54,4 +55,21 @@ footer{
         width: 120px;
         height: 60px;
     }
+}
+.title_disp{
+    position: relative;
+    display: inline-block;
+}
+.title_disp:hover{
+    cursor: pointer;
+}
+.title_disp[data-title]:hover::after{
+    content: attr(data-title);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    background-color: red;
+    width: fit-content;
+    border-radius: 10px;
 }
