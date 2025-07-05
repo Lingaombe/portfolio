@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 
 export default function App() {
   return(
-    <Box minH={"100vh"} bg={useColorModeValue("blue.100", "blue.920")} className="font2"	>
+    <Box minH={"100vh"} bg={useColorModeValue("blue.200", "blue.920")} className="font2"	>
       <Nav />
       <SparkleCursor/>
       <Home /> 

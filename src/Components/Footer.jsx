@@ -4,6 +4,9 @@ export default function Footer(){
         <footer>
             <div className="verse font1">
                 <p>
+                    👩🏻‍🔬 हैना 🔬 하나 🎨
+                </p>
+                <p>
                     "Sirs, what must I do to be saved?"
                 </p>
                 <p>

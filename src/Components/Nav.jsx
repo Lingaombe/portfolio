@@ -30,7 +30,7 @@ export default function Nav(){
                 alt={colorMode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
                 mr={2}
                 title="toggle day/night"
-                onClick={() => {toggle(); toggleColorMode();}}
+                onClick= {toggleColorMode}
             />
             <div className="clouds">
                 <img src={cloud1} className="cloud cloud1" />
