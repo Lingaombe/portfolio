@@ -11,7 +11,7 @@ export default function Popup2({ onClose }){
                 alt="cute cat"
             />
             <p>
-                Oopsy, looks like nothing's here rn...
+                Oopsy, looks like nothings here rn...
             </p>
         </div>
       </div>

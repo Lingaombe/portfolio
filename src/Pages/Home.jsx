@@ -1,10 +1,10 @@
 import dna from '../assets/dna.gif';
 import { useState } from "react";
-import Popup from './aboutMe';
-import Popup1 from './myWork';
+import About from './aboutMe';
+import Frontend from './Frontend';
+import Fullstack from './Fullstack';
 import Popup2 from './other';
 import "./popup.css";
-import sound from "../assets/mood-toggle.mp3";
 
 
 export default function Home() {
@@ -12,16 +12,20 @@ export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
     const [isopen, setisopen] = useState(false);
     const [oOpen, setoOpen] = useState(false);
+    const [fullOpen, setfullOpen] = useState(false);
 
     function aboutMe() {
         setIsOpen(!isOpen);
     };
-    function myWork(){
+    function frontend(){
         setisopen(!isopen);
     };
     function other(){
         setoOpen(!oOpen);
-    }
+    };
+    function fullstack(){
+        setfullOpen(!fullOpen);
+    };
 
     return (
         <div className='main_page'>
@@ -37,26 +41,26 @@ export default function Home() {
                             onClick={aboutMe}
                         ></img>
                     </div>
-                    {isOpen && <Popup onClose={aboutMe} />}
+                    {isOpen && <About onClose={aboutMe} />}
                 </div>
                 <h2>
                     Software Developer
                 </h2>
-                <p><i class="bi bi-geo-alt-fill"></i>Kolhapur, India</p>
-                <div className="tech" style={{justifyContent:"flex-start"}} >
-                    <button className="btn-shine" onClick={myWork} style={{border:"outset"}}>
+                <p style={{fontSize:"12px"}}><i class="bi bi-geo-alt-fill"></i>Kolhapur, India</p>
+                <div className="roles">
+                    <button className="btn-shine" onClick={frontend} style={{border:"outset"}}>
                         Frontend
                     </button>
-                    {isopen && <Popup1 onClose={myWork} />}
-                    <button className="btn-shine" onClick={other} style={{border:"outset"}}>
+                    {isopen && <Frontend onClose={frontend} />}
+                    <button className="btn-shine" onClick={fullstack} style={{border:"outset"}}>
                         Fullstack
                     </button>
-                    {oOpen && <Popup2 onClose={other} />}                    
-                    <button className="btn-shine" onClick={other} style={{border:"outset", width: "70px"}}>
+                    {fullOpen && <Fullstack onClose={fullstack} />}                    
+                    <button className="btn-shine" onClick={other} style={{border:"outset"}}>
                         Apps
                     </button>
                     {oOpen && <Popup2 onClose={other} />}    
-                    <button className="btn-shine" onClick={other} style={{border:"outset", width: "70px"}}>
+                    <button className="btn-shine" onClick={other} style={{border:"outset"}}>
                         IoT
                     </button>
                     {oOpen && <Popup2 onClose={other} />}   

@@ -36,11 +36,13 @@
     display: flex;
     place-content: center;
     gap: 10px;
+    cursor: url('./assets/arrow-pointer.png'), pointer;
 }
 
 .buttons{
     display: flex;
     justify-content: space-between;
+    cursor: url('./assets/arrow-pointer.png'), help;
 }
 .projects{
     display: grid;

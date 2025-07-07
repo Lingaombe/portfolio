@@ -17,10 +17,6 @@ export default function Nav(){
 
     const { colorMode, toggleColorMode } = useColorMode();
     
-    function toggle() {
-        const audio = new Audio(sound);
-        audio.play();
-    }
 
     return (
         <nav>
