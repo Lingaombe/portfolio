@@ -8,7 +8,7 @@ export default function Fullstack({ onClose }){
             <div className="projects">
                 <div className="project">
                     <h3>
-                        VCKVault
+                        Phunzira
                     </h3>
                     <p>
                         A student exam prep solution with resources such as books and past papers
@@ -20,10 +20,11 @@ export default function Fullstack({ onClose }){
                         <li>React</li>
                         <li>ExpressJs</li>
                         <li>MongoDB</li>
+                        <li>OneDrive API</li>
                     </ul>
                     <div className="buttons">
-                        <button className="btn-shine" >Live Demo</button>
-                        <button className="btn-shine" >View Source</button>
+                        <button className="btn-shine" ><a>Live Demo</a></button>
+                        <button className="btn-shine" ><a>View Source</a></button>
                     </div>
                 </div>   
             </div>
