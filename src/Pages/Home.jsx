@@ -1,9 +1,9 @@
 import dna from '../assets/dna.gif';
 import { useState } from "react";
-import About from './aboutMe';
-import Frontend from './Frontend';
-import Fullstack from './Fullstack';
-import Popup2 from './other';
+import About from './aboutMe.jsx';
+import Frontend from './Frontend.jsx';
+import Fullstack from './Fullstack.jsx';
+import Popup2 from './other.jsx';
 import "./popup.css";
 
 

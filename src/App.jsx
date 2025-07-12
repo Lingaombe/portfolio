@@ -2,11 +2,11 @@ import { Box, useColorModeValue } from "@chakra-ui/react";
 import "./App.css"
 
 
-import Nav from './components/Nav';
-import Footer from "./components/Footer";
-import SparkleCursor from "./utils/cursor-tracking";
+import Nav from './components/Nav.jsx';
+import Footer from "./components/Footer.jsx";
+import SparkleCursor from "./utils/cursor-tracking.jsx";
 
-import Home from "./pages/Home";
+import Home from "./pages/Home.jsx";
 
 export default function App() {
   return(
