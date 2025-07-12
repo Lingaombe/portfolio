@@ -2,7 +2,6 @@ import { useColorMode} from "@chakra-ui/react"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import sun from "../assets/sun.png";
 import moon from "../assets/moon.png";
-import sound from "../assets/mood-toggle.mp3";
 import "./comps.css"
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud2.png"; 
@@ -24,7 +23,6 @@ export default function Nav(){
                 className="mode-toggle"
                 src={colorMode === 'light' ? sun : moon}
                 alt={colorMode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
-                mr={2}
                 title="toggle day/night"
                 onClick= {toggleColorMode}
             />
