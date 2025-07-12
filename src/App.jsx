@@ -10,7 +10,7 @@ import Home from "./pages/Home.jsx";
 
 export default function App() {
   return(
-    <Box minH={"100vh"} bg={useColorModeValue("blue.200", "blue.900")} className="font2"	>
+    <Box minH={"100vh"} bg={useColorModeValue("blue.200", "blue.920")} className="font2"	>
       <Nav />
       <SparkleCursor/>
       <Home /> 

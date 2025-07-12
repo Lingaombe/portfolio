@@ -52,6 +52,6 @@ function SparkleCursor() {
         }
       `}</style>
     </>
-  )
-}
+  );
+};
 export default SparkleCursor
