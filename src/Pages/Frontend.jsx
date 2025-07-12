@@ -17,11 +17,11 @@ export default function Frontend({ onClose }){
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
-              <li>Pinterest REST APIs</li>
+              <li>Pinterest API</li>
             </ul>
             <div className="buttons">
-              <button className="btn-shine" ><a href="https://github.com/Lingaombe/hair">Live Demo</a></button>
-              <button className="btn-shine" ><a>View Source</a></button>
+              <button className="btn-shine" ><a href="" target="_blank">Live Demo</a></button>
+              <button className="btn-shine" ><a href="https://github.com/Lingaombe/hair" target="_blank">View Source</a></button>
             </div>
           </div>
           <div className="project">

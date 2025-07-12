@@ -23,8 +23,8 @@ export default function Fullstack({ onClose }){
                         <li>OneDrive API</li>
                     </ul>
                     <div className="buttons">
-                        <button className="btn-shine" ><a>Live Demo</a></button>
-                        <button className="btn-shine" ><a>View Source</a></button>
+                        <button className="btn-shine" ><a href="" target="_blank">Live Demo</a></button>
+                        <button className="btn-shine" ><a href="https://github.com/Lingaombe/Phunzira" target="_blank">View Source</a></button>
                     </div>
                 </div>   
             </div>

@@ -6,7 +6,8 @@ export default function About({ onClose }){
         <button onClick={onClose} id="close"><i class="bi bi-escape"></i></button>
         <h2>Meet the Dev</h2>
         <p>Developing software is my ikigai.</p>
-        <p>I speak JavaScript React Python Flask MySQL Assembly and Embedded C</p>
+        {/* <p>From pipettes to Postgres, my journey has been anything but typical.</p> */}
+        <p>{/* Started with lifes building blocks: DNA and B-cells, now  */}I speak JavaScript React Python Flask MySQL Assembly and Embedded C.</p>
         <p>If you have an awesome idea let me know and we can turn it into reality</p>
         <div className="contact_me">
             <a href="https://github.com/Lingaombe" target="_blank"><i className="bi-github"></i></a>
