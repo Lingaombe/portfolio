@@ -1,37 +1,28 @@
-
 body{
   cursor: url("./assets/cursor.png"), pointer;	
 }
 @font-face {
-  font-family: "Daydream";
-  src: local("Daydream"),
-  url("./fonts/Daydream.ttf") format("truetype");
-}
-.font{
-  font-family: "Daydream", sans-serif;
+  font-family: "Aladin-Regular";
+  src: local("Aladin-Regular"),
+  url("./fonts/Aladin-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Renovation";
-  src: local("Renovation"),
-  url("./fonts/Renovation.otf") format("truetype");
+  font-family: "WinkyRough";
+  src: local("WinkyRough"),
+  url("./fonts/WinkyRough.ttf") format("truetype");
 }
 .font1{
-  font-family: "Renovation", sans-serif;
-  font-size: 1.3rem;
+  font-family: "WinkyRough", sans-serif;
 }
-@font-face {
-  font-family: "MondayFeelings";
-  src: local("MondayFeelings"),
-  url("./fonts/MondayFeelings.ttf") format("truetype");
-}
-.font2{
-  font-family: "MondayFeelings", sans-serif;
-}
-
 h1{
-  font-size: 4vw;
+  font-size: 5vw;
+  font-family: 'Aladin-Regular', sans-serif;
 }
 h2{
   font-size: 4vw;
   font-style: italic;
+  font-family: 'Aladin-Regular', sans-serif;
+}
+h3{
+  font-size: 2vw;
 }

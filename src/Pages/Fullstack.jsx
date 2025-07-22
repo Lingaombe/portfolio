@@ -1,7 +1,7 @@
 
 export default function Fullstack({ onClose }){
   return (
-    <div className="popup-overlay font2">
+    <div className="popup-overlay">
         <div className="popup-content">
             <button onClick={onClose} id="close"><i class="bi bi-escape"></i></button>
             <h2>Key Projects</h2>

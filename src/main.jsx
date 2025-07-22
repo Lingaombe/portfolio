@@ -3,9 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { ChakraProvider } from '@chakra-ui/react'
-import "./fonts/Renovation.otf"
-import "./fonts/Daydream.ttf"
-import "./fonts/MondayFeelings.ttf"
+import "./fonts/WinkyRough.ttf"
+import "./fonts/Aladin-Regular.ttf"
 
 createRoot(document.getElementById('root')).render(
   <ChakraProvider>

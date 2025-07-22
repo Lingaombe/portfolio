@@ -5,12 +5,12 @@
     z-index: 1000;
     height: 100px;
     width: 100px;
-    transition: transform 0.9s ease-in-out;
+    transition: transform 0.5s ease;
     transform: rotate(0deg);
     cursor: url('./assets/arrow-pointer.png'), pointer;
 }
 .mode-toggle:active{
-    transform: rotate(720deg);
+    transform: rotate(360deg);
 }
 footer{
     position: fixed;

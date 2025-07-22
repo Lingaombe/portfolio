@@ -2,18 +2,11 @@
 export default function Footer(){
     return(
         <footer>
-            <div className="verse font1">
-                <p>
-                    👩🏻‍🔬 हैना 🔬 하나 🎨
-                </p>
+            <div className="verse">
                 <p>
                     "Sirs, what must I do to be saved?"
-                </p>
-                <p>
                     "Believe in the Lord Jesus, and you will be saved, you and your household."
-                </p>
-                <p>
-                    Acts 16:30-31
+                    Acts 16:30-31 👩🏻‍🔬 हैना 🔬 하나 🎨
                 </p>
             </div>
         </footer>
