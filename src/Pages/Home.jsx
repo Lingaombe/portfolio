@@ -1,6 +1,8 @@
-import dna from '../assets/vlogger.gif';
+import dna from '../assets/vlog.gif';
 import About from './aboutMe.jsx';
-import Frontend from './Frontend.jsx';
+import Phunzira from './Phunzira.jsx';
+import TsAssist from './TsAssist.jsx';
+import PickFro from './PickFro.jsx';
 import "./popup.css";
 
 import { useState } from "react";
@@ -9,16 +11,22 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
 
-    const [isOpen, setIsOpen] = useState(false);
-    const [isopen, setisopen] = useState(false);
-    const [oOpen, setoOpen] = useState(false);
-    const [fullOpen, setfullOpen] = useState(false);
+    const [about, setAbout] = useState(false);
+    const [phunzira, setPhunzira] = useState(false);
+    const [tsassist, setTsassist] = useState(false);
+    const [pickfro, setPickfro] = useState(false);
 
     function aboutMe() {
-        setIsOpen(!isOpen);
+        setAbout(!about);
     };
-    function frontend(){
-        setisopen(!isopen);
+    function PhunziraFn(){
+        setPhunzira(!phunzira);
+    };
+    function TsAssistFn(){
+        setTsassist(!tsassist);
+    };
+    function PickFroFn(){
+        setPickfro(!pickfro);
     };
 
     return (
@@ -30,9 +38,11 @@ export default function Home() {
                     </h1>
                     <div className="title_disp" data-title="About Me">
                         <img className="dna"
+                            onClick={aboutMe}
                             src={dna}
                             alt="About me"
                         ></img>
+                    {about && <About onClose={aboutMe} />}
                     </div>
                 </div>
                 <h2>
@@ -40,14 +50,50 @@ export default function Home() {
                 </h2>
                 <p style={{fontSize:"12px"}}><i class="bi bi-geo-alt-fill"></i>Kolhapur India</p>
                 <div className="buttons roles">
-                    <button onClick={aboutMe} className="btn-shine">
-                        About me
+                    <button onClick={PhunziraFn} className="btn-shine">
+                        Phunzira
                     </button>
-                    {isOpen && <About onClose={aboutMe} />}
-                    
-                    <button className="btn-shine"><Link to="/myProjects">
-                        My Projects
-                    </Link></button>
+                    {phunzira && <Phunzira onClose={PhunziraFn} />}
+
+                    <button onClick={TsAssistFn} className="btn-shine">
+                        TsAssist
+                    </button>
+                    {tsassist && <TsAssist onClose={TsAssistFn} />}
+
+                    <button onClick={PickFroFn} className="btn-shine">
+                        Pick Ya Fro
+                    </button>
+                    {pickfro && <PickFro onClose={PickFroFn} />}
+
+                    <button onClick={PhunziraFn} className="btn-shine">
+                        Phunzira
+                    </button>
+                    {phunzira && <Phunzira onClose={PhunziraFn} />}
+
+                    <button onClick={TsAssistFn} className="btn-shine">
+                        TsAssist
+                    </button>
+                    {tsassist && <TsAssist onClose={TsAssistFn} />}
+
+                    <button onClick={PickFroFn} className="btn-shine">
+                        Pick Ya Fro
+                    </button>
+                    {pickfro && <PickFro onClose={PickFroFn} />}
+
+                    <button onClick={PhunziraFn} className="btn-shine">
+                        Phunzira
+                    </button>
+                    {phunzira && <Phunzira onClose={PhunziraFn} />}
+
+                    <button onClick={TsAssistFn} className="btn-shine">
+                        TsAssist
+                    </button>
+                    {tsassist && <TsAssist onClose={TsAssistFn} />}
+
+                    <button onClick={PickFroFn} className="btn-shine">
+                        Pick Ya Fro
+                    </button>
+                    {pickfro && <PickFro onClose={PickFroFn} />}
                 </div>                         
             </div>
         </div>

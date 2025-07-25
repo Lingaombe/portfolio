@@ -12,14 +12,14 @@
 .mode-toggle:active{
     transform: rotate(360deg);
 }
-footer{
+.verse{
     position: fixed;
     bottom: 0;
     left: 0;
     padding: 10px;
     width: 100vw;
+    display: flex;
 }
-
 .cloud{
     width: 200px;
     height: 60px;
@@ -56,8 +56,4 @@ footer{
         width: 120px;
         height: 60px;
     }
-}
-
-.tech{
-    gap: 2px;
 }

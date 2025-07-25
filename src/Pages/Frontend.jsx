@@ -6,21 +6,18 @@ export default function Frontend(){
         <h2>Key Projects</h2>
         <div className="projects">
           <div className="project">
-            <div className="image"></div>
-            <div className="description">
-              <h3>
-                Hairstyle picker
-              </h3>
-              <p>
-                A website to help you escape decision fatigue and pick a Hairstyle
-              </p>
-              <ul className="tech">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Pinterest API</li>
-              </ul>
-            </div>
+            <h3>
+              Hairstyle picker
+            </h3>
+            <p>
+              A website to help you escape decision fatigue and pick a Hairstyle
+            </p>
+            <ul className="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Pinterest API</li>
+            </ul>
             <div className="buttons">
               <button className="btn-shine" ><a href="" target="_blank">Live Demo</a></button>
               <button className="btn-shine" ><a href="https://github.com/Lingaombe/hair" target="_blank">View Source</a></button>
