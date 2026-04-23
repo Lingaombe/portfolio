@@ -48,38 +48,8 @@ export default function Home() {
                 <h2>
                     Software Developer
                 </h2>
-                <p style={{fontSize:"12px"}}><i class="bi bi-geo-alt-fill"></i>Kolhapur India</p>
+                
                 <div className="buttons roles">
-                    <button onClick={PhunziraFn} className="btn-shine">
-                        Phunzira
-                    </button>
-                    {phunzira && <Phunzira onClose={PhunziraFn} />}
-
-                    <button onClick={TsAssistFn} className="btn-shine">
-                        TsAssist
-                    </button>
-                    {tsassist && <TsAssist onClose={TsAssistFn} />}
-
-                    <button onClick={PickFroFn} className="btn-shine">
-                        Pick Ya Fro
-                    </button>
-                    {pickfro && <PickFro onClose={PickFroFn} />}
-
-                    <button onClick={PhunziraFn} className="btn-shine">
-                        Phunzira
-                    </button>
-                    {phunzira && <Phunzira onClose={PhunziraFn} />}
-
-                    <button onClick={TsAssistFn} className="btn-shine">
-                        TsAssist
-                    </button>
-                    {tsassist && <TsAssist onClose={TsAssistFn} />}
-
-                    <button onClick={PickFroFn} className="btn-shine">
-                        Pick Ya Fro
-                    </button>
-                    {pickfro && <PickFro onClose={PickFroFn} />}
-
                     <button onClick={PhunziraFn} className="btn-shine">
                         Phunzira
                     </button>

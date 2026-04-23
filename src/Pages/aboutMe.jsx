@@ -40,7 +40,7 @@ export default function About({ onClose }){
             <i className="bi-envelope-plus-fill" onClick={() => window.location = 'mailto:hmngoli@outlook.com'}></i>
             <a href="https://www.linkedin.com/in/hannahmngoli" target="_blank"><i className="bi-linkedin"></i></a>
             <a href="https://www.instagram.com/hanmngoli" target="_blank"><i className="bi-instagram"></i></a>
-            <a href="#" target="_blank" className="trigger" data-tooltip="CV/Resume"><i className="bi-file-earmark-person-fill"></i></a>
+            <a href="https://drive.google.com/file/d/15YVYjEqCiUrMAQV-BsckYSiML1bICsnW/view?usp=sharing" target="_blank" className="trigger" data-tooltip="CV/Resume"><i className="bi-file-earmark-person-fill"></i></a>
         </div>
       </div>
     </div>
